@@ -288,8 +288,8 @@ div.main-navigation > div:after {
 	transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out, -moz-box-shadow .3s ease-in-out;
 }
 div.main-navigation > div:hover:before {
-	width: 158%;
-	height: 158%;
+	width: 200%;
+	height: 200%;
 }
 div.main-navigation > div:hover:after {
 	-webkit-box-shadow: 0px 0px 12px 8px #A72421, inset 0px 1px 10px 8px #52424261;
