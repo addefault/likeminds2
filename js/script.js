@@ -142,12 +142,12 @@ $(document).ready(function() {
 		});
 	});
 	$('input, select, textarea').focus(function() {
-		if($(this).closest('label').find('.error-message').length > 0)
-			$(this).closest('label').find('.error-message').fadeOut().remove();
+		if($(this).closest('.field-wrapper').find('.error-message').length > 0)
+			$(this).closest('.field-wrapper').find('.error-message').fadeOut().remove();
 	});
 	$('input[type=checkbox]').change(function() {
-		if($(this).closest('label').find('.error-message').length > 0)
-			$(this).closest('label').find('.error-message').fadeOut().remove();
+		if($(this).closest('.field-wrapper').find('.error-message').length > 0)
+			$(this).closest('.field-wrapper').find('.error-message').fadeOut().remove();
 	});
 	$('input[type=submit]').click(function(e) {
 		e.preventDefault();
@@ -175,9 +175,9 @@ $(document).ready(function() {
 			} else if($(this).hasClass('date') && !(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/).test($(this).val())) {
 				errorText = 'Введена неверная дата';
 			}
-			if(errorText && !$(this).closest('label').find('.error-message').length > 0) {
-				$(this).closest('label').append('<span class="error-message">'+errorText+'</span>');
-				$(this).closest('label').find('.error-message').fadeIn();
+			if(errorText && !$(this).closest('.field-wrapper').find('.error-message').length > 0) {
+				$(this).closest('.field-wrapper').append('<span class="error-message">'+errorText+'</span>');
+				$(this).closest('.field-wrapper').find('.error-message').fadeIn();
 			}
 		});
 			if(!errorText && form.hasClass('email-confirm')) {

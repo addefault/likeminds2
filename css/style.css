@@ -2044,7 +2044,7 @@ span.popup-close {
 		width: 45px;
 		height: 45px;
 	}
-	.btn, input[type=text], input[type=password], .select2-container--default .select2-selection, label p, textarea {
+	.btn, input[type=text], input[type=password], .select2-container--default .select2-selection, .field-wrapper p, textarea {
 		font-size: 1.058rem;
 	}
 	form span.error-message {
