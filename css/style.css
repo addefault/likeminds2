@@ -1403,30 +1403,11 @@ div.contacts .buttons > a span {
 	-moz-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
-div.contacts .buttons > a:hover span {
-	width: auto;
-}
+
 div.contacts .buttons > a span img {
 	margin-left: 10px;
 }
-div.contacts .buttons > a:hover  {
-	width: auto;
-	
-	background: -webkit-gradient(linear, left top, left bottom, from(#A72421), to(#DB1F24));
-	
-	background: -webkit-linear-gradient(top, #A72421 0%, #DB1F24 100%);
-	
-	background: -moz-linear-gradient(top, #A72421 0%, #DB1F24 100%);
-	
-	background: -o-linear-gradient(top, #A72421 0%, #DB1F24 100%);
-	
-	background: linear-gradient(180deg, #A72421 0%, #DB1F24 100%);
-	font-family: "ar_Aquaguy";
-	font-size: .9rem;
-	border: none;
-	position: relative;
-	padding: 9px 13px;
-}
+
 div.message-icon {
 	width: 72px;
 	height: 72px;
@@ -1948,6 +1929,29 @@ span.popup-close {
 		margin-top: 33px;
 	}
 }
+@media (min-width: 769px) {
+	div.contacts .buttons > a:hover span {
+		width: auto;
+	}
+	div.contacts .buttons > a:hover  {
+		width: auto;
+		
+		background: -webkit-gradient(linear, left top, left bottom, from(#A72421), to(#DB1F24));
+		
+		background: -webkit-linear-gradient(top, #A72421 0%, #DB1F24 100%);
+		
+		background: -moz-linear-gradient(top, #A72421 0%, #DB1F24 100%);
+		
+		background: -o-linear-gradient(top, #A72421 0%, #DB1F24 100%);
+		
+		background: linear-gradient(180deg, #A72421 0%, #DB1F24 100%);
+		font-family: "ar_Aquaguy";
+		font-size: .9rem;
+		border: none;
+		position: relative;
+		padding: 9px 13px;
+	}
+} 
 @media (max-width: 768px) {
 	.oxs {
 		display: -webkit-box;
@@ -2166,6 +2170,42 @@ span.popup-close {
 	}
 	.article {
 		padding: 0 20px;
+	}
+	div.contacts {
+		width: 90%;
+	}
+	div.contacts > div {
+		padding-left: 12px;
+		padding-right: 4px;
+		height: 44px;
+	}
+	div.contacts > div > p > span {
+		margin-right: 10px;
+	}
+	div.contacts > div p {
+		font-size: .9rem;
+		max-width: 74%;
+	}
+	div.contacts .buttons > a {
+		width: 28px;
+		height: 28px;
+	}
+	div.contacts .buttons > a:first-child {
+		background-size: 15px auto, auto;
+	}
+	div.contacts .buttons > a:last-child {
+		background-size: auto;
+	}
+	div.contacts .buttons > a:hover  {
+		border-color: #a82421;
+	}
+	div.contacts .buttons > a:first-child:hover  {
+		background-image: url(../images/envelope2.png), linear-gradient(180deg, #A72421 0%, #DB1F24 100%);
+		background-size: 16px auto, auto;
+	}
+	div.contacts .buttons > a:last-child:hover  {
+		background-image: url(../images/delete2.png), linear-gradient(180deg, #A72421 0%, #DB1F24 100%);
+		background-size: auto;
 	}
 }
 @media (max-width: 690px) {
