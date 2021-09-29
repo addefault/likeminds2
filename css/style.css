@@ -2440,6 +2440,37 @@ span.popup-close {
 		line-height: 1.4;
 	}
 }
+@media (max-width: 390px) {
+	header div p.logged {
+		padding-right: 0;
+	}
+	header > div {
+		padding-right: 8px;
+	}
+	.select2-dropdown.type-select,
+	select.type + .select2-container--default .select2-selection--single .select2-selection__rendered,
+	select.type + .select2-container--default .select2-selection {
+		font-size: 1rem;
+		line-height: 36px;
+	}
+	.select2-dropdown.type-select .select2-results__option {
+		font-size: 1rem;
+	}
+	select.type + .select2-container--default .select2-selection {
+		height: 36px;
+	}
+	select.type + .select2-container--default .select2-selection .select2-selection__rendered > img,
+	.select2-dropdown.type-select .select2-results__option > img {
+		width: 25px;
+	}
+	select.type + .select2-container--default .select2-selection .select2-selection__rendered > *:last-child,
+	.select2-dropdown.type-select .select2-results__option > *:last-child {
+		margin-left: 8px;
+	}
+	select.type + .select2-container--default {
+		width: 220px !important;
+	}
+}
 @media (max-width: 320px) {
 	header img.logo {
 		height: 50px;
