@@ -187,11 +187,10 @@ div.main-navigation > div:before {
 	display: block;
 	width: 90%;
 	height: 90%;
-	background: -webkit-gradient(linear, left top, left bottom, from(#A72421), to(#DB1F24));
-	background: -webkit-linear-gradient(top, #A72421, #DB1F24);
-	background: -moz-linear-gradient(top, #A72421, #DB1F24);
-	background: -o-linear-gradient(top, #A72421, #DB1F24);
-	background: linear-gradient(to bottom, #A72421, #DB1F24);
+	background-image: url(../images/back.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% auto;
 	z-index: -1;
 	top: 50%;
 	left: 50%;
@@ -200,11 +199,6 @@ div.main-navigation > div:before {
 	    -ms-transform: translate(-50%, -50%);
 	     -o-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
-	-webkit-border-radius: 50%;
-	   -moz-border-radius: 50%;
-	        border-radius: 50%;
-	-webkit-filter: blur(8px);
-	        filter: blur(8px);
 	-webkit-transition: .3s ease-in-out;
 	-o-transition: .3s ease-in-out;
 	-moz-transition: .3s ease-in-out;
@@ -294,8 +288,8 @@ div.main-navigation > div:after {
 	transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out, -moz-box-shadow .3s ease-in-out;
 }
 div.main-navigation > div:hover:before {
-	width: 120%;
-	height: 120%;
+	width: 144%;
+	height: 144%;
 }
 div.main-navigation > div:hover:after {
 	-webkit-box-shadow: 0px 0px 12px 8px #A72421, inset 0px 1px 10px 8px #52424261;
@@ -2333,17 +2327,7 @@ span.popup-close {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	div.main-navigation > div:before {
-		filter: none;
-		background-image: url(../images/back.png);
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: 100% auto;
-	}
-	div.main-navigation > div:hover:before {
-		width: 136%;
-		height: 136%;	
-	}
+	
 	
 }
 @media (max-width: 490px) {
