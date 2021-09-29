@@ -2334,8 +2334,6 @@ span.popup-close {
 		margin-right: 10px;
 	}
 	div.main-navigation > div:before {
-		width: 120%;
-		height: 120%;
 		margin: 6%;
 		-webkit-transform: translate(-55%, -55%);
 	    -moz-transform: translate(-55%, -55%);
