@@ -2334,13 +2334,17 @@ span.popup-close {
 		margin-right: 10px;
 	}
 	div.main-navigation > div:before {
-		margin: 6%;
-		-webkit-transform: translate(-55%, -55%);
-	    -moz-transform: translate(-55%, -55%);
-	    -ms-transform: translate(-55%, -55%);
-	    -o-transform: translate(-55%, -55%);
-	    transform: translate(-55%, -55%);
+		filter: none;
+		background-image: url(../images/back.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 100% auto;
 	}
+	div.main-navigation > div:hover:before {
+		width: 136%;
+		height: 136%;	
+	}
+	
 }
 @media (max-width: 490px) {
 	div.results {
