@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	$('.main-navigation a').click(function(e) {
+		e.preventDefault();
+	});
 	$('.date').datepicker({
 		dateFormat: "dd/mm/yy",
 		changeMonth: true,
