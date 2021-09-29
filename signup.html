@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<title>Sign Up</title>
 	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" href="css/select2.min.css">
@@ -50,7 +50,7 @@
 		<div class="lgcontent">
 			<h3>Sign up</h3>
 			<form method="POST" class="email-confirm">
-				<p class="form-heading">Для регистрации необходимо подтвердить email</p>
+				<p class="form-heading">To register, you need to confirm your email</p>
 				<label class="field-wrapper">
 					<p>Email</p>
 					<input type="text" class="flde" name="email" required>
@@ -60,23 +60,23 @@
 			</form>
 			<form method="POST" class="code-confirm">
 				<label class="field-wrapper">
-					<p>Введите код</p>
+					<p>Enter code</p>
 					<input type="text" name="code" class="fldn" required>
 				</label>
 				<input type="submit" value="Подтвердить" class="btn">
 			</form>
 			<form method="POST" class="data-confirm">
-				<p class="form-heading">Заполните данные</p>
+				<p class="form-heading">Fill in the data</p>
 				<label class="field-wrapper">
-					<p>Логин (email)<span class="rq">*</span></p>
+					<p>Login (email)<span class="rq">*</span></p>
 					<input type="text" class="flde" name="email" required>
 				</label>
 				<label class="field-wrapper">
-					<p>Пароль<span class="rq">*</span></p>
+					<p>Password<span class="rq">*</span></p>
 					<input type="password" class="fldd" name="password" required>
 				</label>
 				<label class="field-wrapper">
-					<p>Повторите пароль<span class="rq">*</span></p>
+					<p>Password again<span class="rq">*</span></p>
 					<input type="password" class="fldd" name="password2" required>
 				</label>
 				<label class="field-wrapper">
@@ -84,104 +84,104 @@
 					<input type="text" class="fldd" name="nickname" required>
 				</label>
 				<label class="field-wrapper">
-					<p>Биологический пол (м/ж)<span class="rq">*</span></p>
+					<p>Sex (m/f)<span class="rq">*</span></p>
 					<div class="radio-group">
 						<input type="radio" id="male" name="gender" checked>
-	    				<label for="male">Мужской</label>
+	    				<label for="male">Male</label>
 	    				<input type="radio" id="female" name="gender">
-	    				<label for="female">Женский</label>	
+	    				<label for="female">Female</label>	
 					</div>
 				</label>
 				<label class="field-wrapper">
-					<p>Возраст<span class="rq">*</span></p>
+					<p>Age<span class="rq">*</span></p>
 					<input type="text" name="birth" required class="date" placeholder="Дата">
 					<div class="date-trigger"></div>
 				</label>
 				<label class="field-wrapper">
-					<p>Интересы</p>
+					<p>Interests</p>
 					<select name="interests" multiple="multiple">
-						<option value="int1" data-image="option">Коллекционер Barbie</option>
-						<option value="int1" data-image="option">Коллекционер Winx</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
-						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Collector Barbie</option>
+						<option value="int1" data-image="option">Collector Winx</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
+						<option value="int1" data-image="option">Collector something</option>
 					</select>
 				</label>
 				<label class="field-wrapper">
 					<p>I'm from<span class="rq">*</span></p>
 					<select name="country" required>
-						<option value="">Выберите страну</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
+						<option value="">Choose a country</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
 					</select>
 				</label>
 				<label class="field-wrapper">
 					<p>Now I`m here</p>
 					<select name="country2">
-						<option value="">Выберите страну</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
-						<option value="ru">Россия</option>
+						<option value="">Choose a country</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
+						<option value="ru">Russia</option>
 					</select>
 				</label>
 				<label class="field-wrapper">
-					<p>Базовый язык<span class="rq">*</span></p>
+					<p>Basic language<span class="rq">*</span></p>
 					<select name="language" required>
-						<option value="">Выберите язык</option>
-						<option value="ru">Русский</option>
-						<option value="ru">Русский</option>
-						<option value="ru">Русский</option>
-						<option value="ru">Русский</option>
-						<option value="ru">Русский</option>
-						<option value="ru">Русский</option>
+						<option value="">Choose language</option>
+						<option value="ru">Russian</option>
+						<option value="ru">Russian</option>
+						<option value="ru">Russian</option>
+						<option value="ru">Russian</option>
+						<option value="ru">Russian</option>
+						<option value="ru">Russian</option>
 					</select>
 				</label>
 				<label class="field-wrapper">
-					<p>Дополнительный язык</p>
+					<p>Additional language</p>
 					<select name="language2" multiple="multiple">
-						<option value="">Выберите язык</option>
-						<option value="en">Английский</option>
-						<option value="ch">Китайский</option>
-						<option value="es">Испанский</option>
-						<option value="it">Итальянский</option>
-						<option value="fr">Французский</option>
-						<option value="pr">Португальский</option>
+						<option value="">Choose language</option>
+						<option value="en">English</option>
+						<option value="ch">Chinese</option>
+						<option value="es">Spanish</option>
+						<option value="it">Italian</option>
+						<option value="fr">French</option>
+						<option value="pr">Portuguese</option>
 					</select>
 				</label>
 				<label class="field-wrapper">
-					<p>Социальные сети</p>
+					<p>Social networks</p>
 					<select name="social">
 						<option value="vk" data-limage="vk">Vk.com</option>
 						<option value="vk" data-limage="vk">Vk.com</option>
@@ -203,10 +203,10 @@
 				</label>
 				<label class="field-wrapper">
 					<input type="checkbox" id="agree" required>
-	  				<label for="agree">Я согласен с <a href="#">правилами</a></label>	
+	  				<label for="agree">I agree with <a href="#">the rules</a></label>	
 				</label>
 				
-				<input type="submit" value="Принять" class="btn btn-big">
+				<input type="submit" value="Accept" class="btn btn-big">
 			</form>
 		</div>
 	</main>
