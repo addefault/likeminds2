@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main Page</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="omd">
+			<a href="index.html" class="logo-link"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+			<div class="slogan">
+				<p>we are together</p>
+				<p>we are likeminds</p>
+			</div>
+			<div class="auth-links">
+				<p><a href="#"><img src="images/signin.svg" alt="Signin icon">Sign in</a></p>
+				<p><a href="#"><img src="images/signup.svg" alt="Signup icon">Sign up</a></p>
+			</div>	
+		</div>
+		<div class="osm">
+			<div>
+				<a href="index.html" class="logo-link"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+				<div class="slogan">
+					<p>we are together</p>
+					<p>we are likeminds</p>
+				</div>	
+			</div>
+			<div class="auth-links">
+				<p><a href="#"><img src="images/signin.svg" alt="Signin icon">Sign in</a></p>
+				<p><a href="#"><img src="images/signup.svg" alt="Signup icon">Sign up</a></p>
+			</div>	
+		</div>
+		<div class="oxs">
+			<a href="index.html" class="logo-link"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+			<div>
+				<p class="slogan">we are together.&nbsp;&nbsp;&nbsp;&nbsp;we are likeminds.</p>
+				<div class="auth-links">
+					<p><a href="#"><img src="images/signin.svg" alt="Signin icon">Sign in</a></p>
+					<p><a href="#"><img src="images/signup.svg" alt="Signup icon">Sign up</a></p>
+				</div>	
+			</div>
+			
+		</div>
+	</header>
+	<main>
+		<div class="lgcontent">
+			<h3>Sign up</h3>
+			<form method="POST" class="email-confirm">
+				<p class="form-heading">Для регистрации необходимо подтвердить email</p>
+				<label class="field-wrapper">
+					<p>Email</p>
+					<input type="text" class="flde" name="email" required>
+				</label>
+				<input type="submit" value="Получить код" class="btn">
+				<p class="timer"></p>
+			</form>
+			<form method="POST" class="code-confirm">
+				<label class="field-wrapper">
+					<p>Введите код</p>
+					<input type="text" name="code" class="fldn" required>
+				</label>
+				<input type="submit" value="Подтвердить" class="btn">
+			</form>
+			<form method="POST" class="data-confirm">
+				<p class="form-heading">Заполните данные</p>
+				<label class="field-wrapper">
+					<p>Логин (email)<span class="rq">*</span></p>
+					<input type="text" class="flde" name="email" required>
+				</label>
+				<label class="field-wrapper">
+					<p>Пароль<span class="rq">*</span></p>
+					<input type="password" class="fldd" name="password" required>
+				</label>
+				<label class="field-wrapper">
+					<p>Повторите пароль<span class="rq">*</span></p>
+					<input type="password" class="fldd" name="password2" required>
+				</label>
+				<label class="field-wrapper">
+					<p>Name/Nickname<span class="rq">*</span></p>
+					<input type="text" class="fldd" name="nickname" required>
+				</label>
+				<label class="field-wrapper">
+					<p>Биологический пол (м/ж)<span class="rq">*</span></p>
+					<div class="radio-group">
+						<input type="radio" id="male" name="gender" checked>
+	    				<label for="male">Мужской</label>
+	    				<input type="radio" id="female" name="gender">
+	    				<label for="female">Женский</label>	
+					</div>
+				</label>
+				<label class="field-wrapper">
+					<p>Возраст<span class="rq">*</span></p>
+					<input type="text" name="birth" required class="date" placeholder="Дата">
+					<div class="date-trigger"></div>
+				</label>
+				<label class="field-wrapper">
+					<p>Интересы</p>
+					<select name="interests" multiple="multiple">
+						<option value="int1" data-image="option">Коллекционер Barbie</option>
+						<option value="int1" data-image="option">Коллекционер Winx</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+					</select>
+				</label>
+				<label class="field-wrapper">
+					<p>I'm from<span class="rq">*</span></p>
+					<select name="country" required>
+						<option value="">Выберите страну</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+					</select>
+				</label>
+				<label class="field-wrapper">
+					<p>Now I`m here</p>
+					<select name="country2">
+						<option value="">Выберите страну</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+						<option value="ru">Россия</option>
+					</select>
+				</label>
+				<label class="field-wrapper">
+					<p>Базовый язык<span class="rq">*</span></p>
+					<select name="language" required>
+						<option value="">Выберите язык</option>
+						<option value="ru">Русский</option>
+						<option value="ru">Русский</option>
+						<option value="ru">Русский</option>
+						<option value="ru">Русский</option>
+						<option value="ru">Русский</option>
+						<option value="ru">Русский</option>
+					</select>
+				</label>
+				<label class="field-wrapper">
+					<p>Дополнительный язык</p>
+					<select name="language2" multiple="multiple">
+						<option value="">Выберите язык</option>
+						<option value="en">Английский</option>
+						<option value="ch">Китайский</option>
+						<option value="es">Испанский</option>
+						<option value="it">Итальянский</option>
+						<option value="fr">Французский</option>
+						<option value="pr">Португальский</option>
+					</select>
+				</label>
+				<label class="field-wrapper">
+					<p>Социальные сети</p>
+					<select name="social">
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+						<option value="vk" data-limage="vk">Vk.com</option>
+					</select>
+					<div class="additem"></div>
+				</label>
+				<label class="field-wrapper">
+					<input type="checkbox" id="agree" required>
+	  				<label for="agree">Я согласен с <a href="#">правилами</a></label>	
+				</label>
+				
+				<input type="submit" value="Принять" class="btn btn-big">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<a href="#">2021©Likeminds</a>
+		<a href="#">About<br> us</a>
+		<a href="#">Contact<br> us</a>
+	</footer>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

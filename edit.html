@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main Page</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="omd">
+			<a href="index.html" class="logo-link"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+			<div class="slogan">
+				<p>we are together</p>
+				<p>we are likeminds</p>
+			</div>
+			<div class="auth-links">
+				<p><a href="#"><img src="images/signin.svg" alt="Signin icon">Sign in</a></p>
+				<p><a href="#"><img src="images/signup.svg" alt="Signup icon">Sign up</a></p>
+			</div>	
+		</div>
+		<div class="osm">
+			<div>
+				<a href="index.html" class="logo-link"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+				<div class="slogan">
+					<p>we are together</p>
+					<p>we are likeminds</p>
+				</div>	
+			</div>
+			<div class="auth-links">
+				<p><a href="#"><img src="images/signin.svg" alt="Signin icon">Sign in</a></p>
+				<p><a href="#"><img src="images/signup.svg" alt="Signup icon">Sign up</a></p>
+			</div>	
+		</div>
+		<div class="oxs">
+			<a href="index.html" class="logo-link"><img src="images/logo.svg" alt="Logo" class="logo"></a>
+			<div>
+				<p class="slogan">we are together.&nbsp;&nbsp;&nbsp;&nbsp;we are likeminds.</p>
+				<div class="auth-links">
+					<p><a href="#"><img src="images/signin.svg" alt="Signin icon">Sign in</a></p>
+					<p><a href="#"><img src="images/signup.svg" alt="Signup icon">Sign up</a></p>
+				</div>	
+			</div>
+			
+		</div>
+	</header>
+	<main>
+		<h3>Персональные данные</h3>
+		<form method="POST" class="edit-form">
+			<div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Логин (email)</p>
+						<input type="text" value="example@example.com">
+					</label>	
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Пароль</p>
+						<input type="password" value="saldas">
+					</label>
+					<a href="#">Изменить</a>
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Name/Nickname</p>
+						<input type="text" value="John">
+					</label>	
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Возраст</p>
+						<input type="text" class="date" value="07/09/1990">
+						<div class="date-trigger"></div>
+					</label>
+					<input type="checkbox" id="showage">
+					<label for="showage">Отображать на странице и в поиске</label>		
+				</div>
+			</div>
+			<div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Биологический пол (м/ж)<span class="rq"></span></p>
+						<div class="radio-group">
+							<input type="radio" id="male" name="gender" checked>
+			    			<label for="male">Мужской</label>
+			    			<input type="radio" id="female" name="gender">
+			    			<label for="female">Женский</label>	
+						</div>
+					</label>	
+					<input type="checkbox" id="showgender" checked>
+					<label for="showgender">Отображать на странице и в поиске</label>
+				</div>
+			</div>
+			<div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Интересы</p>
+						<select name="interests" multiple="multiple">
+							<option value="int1" data-image="option">Коллекционер Barbie</option>
+							<option value="int1" data-image="option">Коллекционер Winx</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+							<option value="int1" data-image="option">Коллекционер Ещё чего-нибудь</option>
+						</select>
+					</label>		
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>I`m from</p>
+						<select name="origingeo">
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+							<option value="origin1">Россия, Ростовская область, Ростов</option>
+						</select>
+					</label>	
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Now I`m here</p>
+						<select name="origingeo2">
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+							<option value="origin2">Россия, Ростовская область, Ростов</option>
+						</select>
+					</label>	
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Базовый язык</p>
+						<select name="language">
+							<option value="language">Русский</option>
+							<option value="language">Русский</option>
+							<option value="language">Русский</option>
+							<option value="language">Русский</option>
+							<option value="language">Русский</option>
+							<option value="language">Русский</option>
+							<option value="language">Русский</option>
+							<option value="language">Русский</option>
+						</select>
+					</label>	
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Дополнительный язык</p>
+						<select name="language2" multiple="multiple">
+							<option value="int1" selected>English</option>
+							<option value="int1" selected>English</option>
+							<option value="int1" selected>English</option>
+							<option value="int1">English</option>
+							<option value="int1">English</option>
+							<option value="int1">English</option>
+							<option value="int1">English</option>
+						</select>
+					</label>
+					<input type="checkbox" id="showgender" checked>
+					<label for="showgender">Отображать на странице и в поиске</label>	
+				</div>
+				<div class="field-container">
+					<label class="field-wrapper">
+						<p>Социальные сети</p>
+						<select name="social">
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+							<option value="vk" data-limage="vk">Vk.com</option>
+						</select>
+						<div class="additem"></div>
+						<div class="social-item"><img src="images/vk.png"><input type="text" value="https://vk.com/durov"><span aria-hidden="true">×</span></div>
+						<div class="social-item"><img src="images/vk.png"><input type="text" value="https://vk.com/durov2"><span aria-hidden="true">×</span></div>
+					</label>
+					<input type="checkbox" id="showsocial" checked>
+					<label for="showsocial">Отображать на странице</label>	
+				</div>
+			</div>
+			<div class="links-block">
+				<p><a href="#">Посмотреть страницу</a></p>
+			</div>
+			<input type="submit" value="Сохранить" class="btn btn-big">
+		</form>
+	</main>
+	<footer>
+		<a href="#">2021©Likeminds</a>
+		<a href="#">About<br> us</a>
+		<a href="#">Contact<br> us</a>
+	</footer>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
