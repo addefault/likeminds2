@@ -2330,8 +2330,18 @@ span.popup-close {
 }
 @media (max-width: 450px) {
 	div.main-navigation > div:first-child, div.main-navigation > div, div.main-navigation > div:last-child {
-		margin-left: 0;
-		margin-right: 0;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	div.main-navigation > div:before {
+		width: 120%;
+		height: 120%;
+		margin: 6%;
+		-webkit-transform: translate(-55%, -55%);
+	    -moz-transform: translate(-55%, -55%);
+	    -ms-transform: translate(-55%, -55%);
+	    -o-transform: translate(-55%, -55%);
+	    transform: translate(-55%, -55%);
 	}
 }
 @media (max-width: 490px) {
