@@ -2315,6 +2315,25 @@ span.popup-close {
 		margin: 5px 0;
 	}
 }
+@media (max-width: 540px) {
+	div.message-icon {
+		position: absolute;
+		right: 50px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 35px;
+		height: 35px;
+		background-size: 25px auto;
+	}
+	div.information .row.row-high {
+		position: relative;
+	}
+	div.information .row.ileft img {
+		margin-bottom: 0;
+		margin-left: 5px;
+		width: 21px;
+	}
+}
 @media (max-width: 545px), (max-width: 768px) and (orientation: landscape) {
 	footer {
 		-webkit-box-pack: justify;
