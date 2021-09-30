@@ -173,9 +173,9 @@ $(document).ready(function() {
 				hasError = true;
 				errorText = 'Invalid code entered';
 			} else if($(this).hasClass('fldd')) {
-				if($(this).val().length < 6) {
+				if($(this).val().length < 3) {
 					hasError = true;
-					errorText = 'The minimum length is 6 characters';
+					errorText = 'The minimum length is 3 characters';
 				} else if($(this).val().length > 24) {
 					hasError = true;
 					errorText = 'Maximum length of 24 characters';

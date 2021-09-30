@@ -2331,7 +2331,7 @@ span.popup-close {
 	div.information .row.ileft img {
 		margin-bottom: 0;
 		margin-left: 5px;
-		width: 21px;
+		width: 20px;
 	}
 }
 @media (max-width: 545px), (max-width: 768px) and (orientation: landscape) {
