@@ -2,12 +2,15 @@ $(document).ready(function() {
 	$('.main-navigation a').click(function(e) {
 		e.preventDefault();
 	});
-	$('.date').datepicker({
-		dateFormat: "dd/mm/yy",
-		changeMonth: true,
-		changeYear: true,
-		maxDate: -1
-	});
+	if($('.date').length > 0) {
+		$('.date').datepicker({
+			dateFormat: "dd/mm/yy",
+			changeMonth: true,
+			changeYear: true,
+			maxDate: -1
+		});	
+	}
+	
 	$('.date-trigger').click(function() {
 		$(this).siblings('.date').datepicker('show');
 	});
@@ -154,33 +157,43 @@ $(document).ready(function() {
 		let submit = $(this);
 		let form = submit.closest('form');
 		let fields = form.find('input[type="text"], input[type="password"], textarea, select, input[type="checkbox"]');
-		let errorText;
+		let hasError = false;
 		fields.each(function() {
+			let errorText;
 			if($(this).attr('required') && $(this).val().length === 0) {
+				hasError = true;
 				errorText = 'The field must be filled in!';
 			} else if($(this).attr('required') && $(this).attr('type') === 'checkbox' && !$(this).is(':checked')) {
+				hasError = true;
 				errorText = 'Read the rules';
 			} else if($(this).hasClass('flde') && !(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test($(this).val().toLowerCase()))) {
+				hasError = true;
 				errorText = 'Invalid Email entered';
 			} else if($(this).hasClass('fldn') && !(/^\d+$/).test($(this).val())) {
+				hasError = true;
 				errorText = 'Invalid code entered';
 			} else if($(this).hasClass('fldd')) {
 				if($(this).val().length < 6) {
+					hasError = true;
 					errorText = 'The minimum length is 6 characters';
 				} else if($(this).val().length > 24) {
+					hasError = true;
 					errorText = 'Maximum length of 24 characters';
 				} else if($(this).attr('type') === 'password' && $(this).val() !== form.find('input[type=password]').val()) {
-					errorText = 'Passwords don't match';
+					hasError = true;
+					errorText = "Passwords don't match";
 				}
 			} else if($(this).hasClass('date') && !(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/).test($(this).val())) {
+				hasError = true;
 				errorText = 'Invalid date entered';
 			}
+
 			if(errorText && !$(this).closest('.field-wrapper').find('.error-message').length > 0) {
 				$(this).closest('.field-wrapper').append('<span class="error-message">'+errorText+'</span>');
 				$(this).closest('.field-wrapper').find('.error-message').fadeIn();
 			}
 		});
-			if(!errorText && form.hasClass('email-confirm')) {
+			if(!hasError && form.hasClass('email-confirm')) {
 				$('form.code-confirm').fadeIn();
 				submit.prop('disabled', true);
 				submit.siblings('.timer').html('You can get the code again in <span id="timer" data-timer="3"></span>');
@@ -203,10 +216,10 @@ $(document).ready(function() {
 						}, 1000 * counterInit++);
 					})(i);
 				}
-			} else if(!errorText && form.hasClass('code-confirm')) {
+			} else if(!hasError && form.hasClass('code-confirm')) {
 				$('.email-confirm, .code-confirm').fadeOut();
 				$('.data-confirm').fadeIn();
-			} else if(!errorText && form.hasClass('contact-confirm')) {
+			} else if(!hasError && form.hasClass('contact-confirm')) {
 				$('.popup.contact-popup').css("display", "flex").hide().fadeIn();
 			}
 		//form.submit();
