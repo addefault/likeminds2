@@ -118,7 +118,7 @@ $(document).ready(function() {
 			"chart2",
 			[60,40],
 			['#656C77', '#DB1F24'],
-			['60%\n(М)', '40%\n(Ж)']
+			['60%\n(M)', '40%\n(F)']
 		);
 		newChart(
 			"chart3",
@@ -135,7 +135,7 @@ $(document).ready(function() {
 	}
 	
 	$('.additem').click(function() {
-		let option = '<div class="social-item"><img src="'+$(this).prev('.select2').find('.select2-selection__rendered').find('img').attr('src')+'"><input type="text" placeholder="Введите ссылку на социальную сеть"><span aria-hidden="true">×</span></div>';
+		let option = '<div class="social-item"><img src="'+$(this).prev('.select2').find('.select2-selection__rendered').find('img').attr('src')+'"><input type="text" placeholder="Enter the link to the social network"><span aria-hidden="true">×</span></div>';
 		$(option).insertAfter($(this));
 		$('.social-item span').click(function() {
 			$(this).closest('.social-item').remove();
@@ -157,23 +157,23 @@ $(document).ready(function() {
 		let errorText;
 		fields.each(function() {
 			if($(this).attr('required') && $(this).val().length === 0) {
-				errorText = 'Поле обязательно для заполнения!';
+				errorText = 'The field must be filled in!';
 			} else if($(this).attr('required') && $(this).attr('type') === 'checkbox' && !$(this).is(':checked')) {
-				errorText = 'Ознакомьтесь с правилами';
+				errorText = 'Read the rules';
 			} else if($(this).hasClass('flde') && !(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test($(this).val().toLowerCase()))) {
-				errorText = 'Введён неверный Email';
+				errorText = 'Invalid Email entered';
 			} else if($(this).hasClass('fldn') && !(/^\d+$/).test($(this).val())) {
-				errorText = 'Введён неверный код';
+				errorText = 'Invalid code entered';
 			} else if($(this).hasClass('fldd')) {
 				if($(this).val().length < 6) {
-					errorText = 'Минимальная длина 6 символов';
+					errorText = 'The minimum length is 6 characters';
 				} else if($(this).val().length > 24) {
-					errorText = 'Максимальная длина 24 символов';
+					errorText = 'Maximum length of 24 characters';
 				} else if($(this).attr('type') === 'password' && $(this).val() !== form.find('input[type=password]').val()) {
-					errorText = 'Пароли не совпадают';
+					errorText = 'Passwords don't match';
 				}
 			} else if($(this).hasClass('date') && !(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/).test($(this).val())) {
-				errorText = 'Введена неверная дата';
+				errorText = 'Invalid date entered';
 			}
 			if(errorText && !$(this).closest('.field-wrapper').find('.error-message').length > 0) {
 				$(this).closest('.field-wrapper').append('<span class="error-message">'+errorText+'</span>');
@@ -183,7 +183,7 @@ $(document).ready(function() {
 			if(!errorText && form.hasClass('email-confirm')) {
 				$('form.code-confirm').fadeIn();
 				submit.prop('disabled', true);
-				submit.siblings('.timer').html('Повторно код можно получить через <span id="timer" data-timer="3"></span>');
+				submit.siblings('.timer').html('You can get the code again in <span id="timer" data-timer="3"></span>');
 				let counter = $('#timer');
 				let counterValue = counter.data('timer')*60;
 				let counterInit = 0;
