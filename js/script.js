@@ -221,6 +221,8 @@ $(document).ready(function() {
 				$('.data-confirm').fadeIn();
 			} else if(!hasError && form.hasClass('contact-confirm')) {
 				$('.popup.contact-popup').css("display", "flex").hide().fadeIn();
+			} else if(!hasError && form.hasClass('recover-confirm')) {
+				$('.popup.recover-popup').css("display", "flex").hide().fadeIn();
 			}
 		//form.submit();
 	});

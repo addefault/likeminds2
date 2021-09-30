@@ -715,6 +715,10 @@ form span.error-message:before {
 	bottom: 0;
 	z-index: 1;
 }
+p.recover-heading {
+	font-size: .9rem;
+	margin-top: 30px;
+}
 form .radio-group {
 	margin-top: 20px;
 }
@@ -1803,6 +1807,7 @@ span.popup-close {
 	right: -12px;
 	cursor: pointer;
 }
+
 
 .osm, .oxs, .oxsl, .oxsp {
 	display: none;
